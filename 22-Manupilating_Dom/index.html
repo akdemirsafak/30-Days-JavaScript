@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <h2>Document Object Model</h2>
+    <h4>DOM</h4>
+    <ul>
+        <li>Document</li>
+        <li>Element</li>
+        <li>Attribute</li>
+        <li>Text</li>
+    </ul> -->
+    <p id="paragraph"></p>
+
+
+    <script>
+        const paragraph = document.querySelector('#paragraph')
+        paragraph.innerHTML = 'Bu bir paragraf yazısı'
+        paragraph.style.color = 'red'
+        paragraph.style.fontSize = '20px'
+        paragraph.style.fontWeight = 'bolder'
+        paragraph.style.textAlign = 'center'
+
+        const heading = document.createElement('h1')
+        heading.innerText = "Bu bir başlık"
+        heading.className = ''
+
+        //paragraph.appendChild(heading)
+
+
+    </script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
