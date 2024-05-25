@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        ol {
+            font-size: 18px;
+            line-height: 1.75;
+        }
+
+        ul {
+            font-size: 16px;
+        }
+    </style>
+    <h1>Regular expression</h1>
+    <ol>
+        <li>[] Braket ile belli bir aralığı ifade ederiz.
+            <ul>
+                <li>[a-c] : a ile c aralığı a-b-c harfleri </li>
+                <li>[a-z] : a ile z arasındaki küçük harfleri </li>
+                <li>[A-Z] : A ile Z arasındaki Büyük harfleri </li>
+                <li>[0-9] : 0 ile 9 arasındaki rakamları </li>
+                <li>[a-zA-Z] : a-z ve A-Z arasındaki tüm harfleri </li>
+                <li>[a-zA-Z0-9] : a-z, A-Z ve 0-9 arasındaki tüm harfleri </li>
+            </ul>
+        </li>
+        <li>\ : Özel karakterlerden kaçmak için kullanılır.
+
+            <ul>
+                <li>\d : rakamları içerdiği durum</li>
+                <li>\D : rakamların olmadığı durum</li>
+            </ul>
+        </li>
+        <li>. : yeni satır karakteri hariç karakterler</li>
+        <li>^ : starts with (belirlenen karakterle başlamalı)
+            <ul>
+                <li>^a : a ile başlamalı</li>
+                <li>r'[^abc] : a,b,c ile başlamamalı</li>
+            </ul>
+        </li>
+        <li>$ end with</li>
+        <li>* : zero or more times => hiç olmayacak ya da birden fazla defa</li>
+        <li>+ : one or more times => bir veya birden fazla defa olmalı</li>
+        <li>? : zero or one times => hiç olmayacak ya da 1 tane olacak</li>
+        <li>\b : </li>
+        <li>{3} 3 karakterli</li>
+        <li>{3,} en az 3 karakterli</li>
+        <li>{3,8} 3 ile 8 arası karakterli</li>
+        <li>| : or yani => elma|armut</li>
+        <li>() : gruplama</li>
+    </ol>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
