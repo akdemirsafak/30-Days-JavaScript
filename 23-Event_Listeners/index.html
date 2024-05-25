@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        background-color: cornflowerblue;
+        border-radius: 5px;
+        border-color: cornflowerblue;
+        font-weight: 600;
+    }
+
+    input {
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+</style>
+
+
+<br>
+
+<h1>Event Listeners</h1>
+
+
+<button id="btn">Click Me</button>
+<button id="onclickBtn" onclick="onClickEvent()">OnClick Me</button>
+<button id="dblclickBtn">Double Click</button>
+<button id="mouseEnterBtn">Mouse Enter Button</button>
+
+<hr>
+<!-- 
+<div style="margin-top: 24px;">
+    <input type="text" id="mass" placeholder="Mass in Kilogram" /></br>
+    <input type="text" id="height" placeholder="Height in meters" /></br>
+    <button id="calculate">Calculate BMI</button>
+</div>
+
+
+<script>
+    const mass = document.querySelector('#mass')
+    const height = document.querySelector('#height')
+    const calculateButton = document.querySelector('#calculate')
+
+    let bmi
+    calculateButton.addEventListener('click', () => {
+        bmi = mass.value / (height.value ** 2)
+        alert(`Vücut kitle endeksin : ${bmi.toFixed(2)}`) // To fixed ile ondalıklı kısımı ayarladık.
+
+    })
+
+</script> -->
+
+<h3>Input target value</h3>
+<input type="text" placeholder="Say something" />
+<p></p>
+<script>
+
+    const input = document.querySelector('input')
+    const p = document.querySelector('p')
+
+
+    //  ----- input event and change 
+    //
+
+    // input.addEventListener('input', e => {
+    //     //p.textContent = input.value
+    //     p.textContent = e.target.value
+
+    // })
+
+    // blur event  Focus olayı sona erdiğinde olay gerçekleşir 
+    input.addEventListener('blur', (e) => {
+        p.textContent = e.target.value
+        p.style.color = 'blue'
+    })
+
+    //keypress, keydown, keyup
+
+    document.body.addEventListener('keypress', e => {
+        alert(e.keyCode) // her harfin kodunu getirir. ASCII
+    })
+
+</script>
+
+
+
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
